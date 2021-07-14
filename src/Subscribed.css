@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.bg{
+  background-image: url("https://image.freepik.com/free-photo/elegant-blue-flowing-wave-background_1017-32745.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width:100%;
+}
+.content {
+  align-content: center;
+  float: left;
+  background: #fff;
+  width: 45%;
+  margin: 3% 7% 3% ;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  overflow-x:auto;
+}
+.content h1 {
+  margin: 0 0 20px;
+  line-height: 1;
+  color: #0905B4;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Roboto";
+}
+.content table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+  margin-right: 6%;
+}
+.content table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.content table td {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+.content span {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  letter-spacing: 0.1rem;
+}
+.form {
+    align-content: center;
+    background: #fff;
+    width: 30%;
+    margin: 3% 60% 3% ;
+    padding: 40px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  .form h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #0905B4;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto";
+  }
+  .form input {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-family: "Roboto";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+  .form input:focus {
+    color: #333;
+    border: 1px solid #44c4e7;
+  }
+  .form button {
+    cursor: pointer;
+    background: #44c4e7;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form button:hover {
+    background: #369cb8;
+  }
+  @media screen and (max-width: 800px) {
+  
+    .content {
+        width: 80%;
+        margin: 3% 10% 3%
+    }
+    table {
+      width:70%;
+      display: block;
+    }
+    th {
+      display: block;
+      width: auto;
+    }
+    td {
+      display: block;
+    }
+    .form {
+      width: 80%;
+      float: left;
+      margin: 3% 10% 3% ;
+    }
+}

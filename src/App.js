@@ -1,25 +1,115 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Navbar.js";
+import Footer from "./Footer.js";
+import Aboutus from "./Aboutus.js";
+import Contactus from "./Contactus.js";
+import Subscribed from "./Subscribed.js";
+import Newsp from "./Newsp.js";
+import Magazines from "./Magazine.js";
+import Homep from "./Home.js";
+import Eventp from "./Events.js";
+import { Switch, Route } from "react-router-dom";
 
-function App() {
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Homep />
+      <Footer />
+    </>
   );
-}
+};
+
+const Magazine = () => {
+  return (
+    <>
+      <Navbar />
+      <Magazines/>
+      <Footer />
+    </>
+  );
+};
+
+const Events = () => {
+  return (
+    <>
+      <Navbar />
+      <Eventp/>
+      <Footer />
+    </>
+  );
+};
+const News = () => {
+  return (
+    <>
+      <Navbar />
+      <Newsp />
+      <Footer />
+    </>
+  );
+};
+const Subscribe = () => {
+  return (
+    <>
+      <Navbar />
+      <Subscribed />
+      <Footer />
+    </>
+  );
+};
+const Contact = () => {
+  return (
+    <>
+      <Navbar/>
+      <Contactus/>
+      <Footer/>
+    </>
+  );
+};
+
+const About = () => {
+  return (
+    <>
+      <Navbar />
+      <Aboutus />
+      <Footer />
+    </>
+  );
+};
+
+const App = () => {
+  return (
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+      <Route path="/magazine">
+        <Magazine />
+      </Route>
+
+      <Route path="/events">
+        <Events />
+      </Route>
+
+      <Route path="/news">
+        <News />
+      </Route>
+
+      <Route path="/subscribe">
+        <Subscribe />
+      </Route>
+
+      <Route path="/contact">
+        <Contact />
+      </Route>
+
+      <Route path="/about">
+        <About />
+      </Route>
+
+    </Switch>
+  );
+};
 
 export default App;

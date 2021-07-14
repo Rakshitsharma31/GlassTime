@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.bg{
+    background-image: url("https://image.freepik.com/free-photo/elegant-blue-flowing-wave-background_1017-32745.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width:100%;
+}
+.contactcontainer {
+    width:80%;
+    color:black;
+    margin: 3% auto 3%;
+}
+.contactcontainer h1{
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #0905B4;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.contactcontainer h2{
+    font-size: 24px;
+    margin:10px 0 20px;
+    font-family: "Roboto";
+}
+.contactcontainer p{
+    font-size: 18px;
+    margin:20px 0 50px;
+    font-family: "Roboto";
+}
+.contactcontainer span{
+    font-size: 22px;
+    margin:20px 0 50px;
+    font-family: "Roboto";
+}
+.social-media {
+    align-items: left;
+    font-size: 3rem;
+    padding: auto;
+    color: blue;
+}
+  
